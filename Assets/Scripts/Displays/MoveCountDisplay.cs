@@ -6,7 +6,7 @@ public class MoveCountDisplay : MonoBehaviour
 {
     private Text _moveCountText;
 
-    private void Awake()
+    private void Start()
     {
         _moveCountText = GetComponent<Text>();
         FifteenGame.Instance.MovesChanged += OnMovesChanged;

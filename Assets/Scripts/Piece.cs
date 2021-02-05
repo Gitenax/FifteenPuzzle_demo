@@ -23,7 +23,7 @@ public class Piece : MonoBehaviour, IPointerDownHandler
 
     public event Action PositionChanged;
     
-    public enum PieceType { HOLE, PIECE }
+    
 
     public float Width => _width;
 

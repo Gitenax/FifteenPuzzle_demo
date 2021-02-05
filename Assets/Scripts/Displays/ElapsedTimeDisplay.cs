@@ -7,7 +7,7 @@ public class ElapsedTimeDisplay : MonoBehaviour
 {
     private Text _elapsedTimeText;
 
-    private void Awake()
+    private void Start()
     {
         _elapsedTimeText = GetComponent<Text>();
         FifteenGame.Instance.TimeChanged += OnTimeChanged;

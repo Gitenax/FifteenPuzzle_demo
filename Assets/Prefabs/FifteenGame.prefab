@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4919c64ed6c576243b58c114813cf935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movesText: {fileID: 0}
   _moves: 0
-  _timeText: {fileID: 0}
+  _seconds: 0
   _gameBoard: {fileID: 0}
+  _currentMode: 3

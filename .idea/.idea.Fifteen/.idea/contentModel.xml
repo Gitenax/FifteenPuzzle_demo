@@ -9,6 +9,7 @@
         <e p="Scripts" t="Include">
           <e p="Audio.cs" t="Include" />
           <e p="Data" t="Include">
+            <e p="Enums.cs" t="Include" />
             <e p="GameData.cs" t="Include" />
             <e p="GameDataProvider.cs" t="Include" />
             <e p="PieceData.cs" t="Include" />

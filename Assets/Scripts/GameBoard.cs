@@ -17,6 +17,9 @@ public class GameBoard : Singleton<GameBoard>
     // Логическая массив элементов
     private Piece[,] _pieces;
 
+
+    public event Action PieceMoved;
+    
     public Piece[,] Pieces
     {
         get => _pieces;
@@ -33,9 +36,9 @@ public class GameBoard : Singleton<GameBoard>
     /// Инициализация новой игровой области
     /// </summary>
     /// <param name="scale">Размерность игровой доски</param>
-    public void Initialize(int scale)
+    public void Initialize(GameMode mode)
     {
-        _width = _height = scale;
+        _width = _height = (int)mode;
         InitializePieces();
     }
 
@@ -69,7 +72,7 @@ public class GameBoard : Singleton<GameBoard>
         {
             _pieces[x, y].PositionChanged += OnPiecePositionChanged;
            
-            if (_pieces[x, y].Type == Piece.PieceType.HOLE)
+            if (_pieces[x, y].Type == PieceType.HOLE)
                 _pieces[x, y].PositionChanged -= OnPiecePositionChanged;
         }
         
@@ -132,7 +135,7 @@ public class GameBoard : Singleton<GameBoard>
             {
                 var nextPiece = GetPieceAtPoint(piece.PointPosition + directions[i] * checkingPieces.Count);
                 if (nextPiece != null)
-                    if (nextPiece.Type != Piece.PieceType.HOLE)
+                    if (nextPiece.Type != PieceType.HOLE)
                         checkingPieces.Push(nextPiece);
                     else
                     {
@@ -163,10 +166,7 @@ public class GameBoard : Singleton<GameBoard>
             _gameBoard = FindObjectOfType<GameBoard>().GetComponent<RectTransform>();
     }
     
-    private void OnPiecePositionChanged()
-    {
-        FifteenGame.Instance.IncreaseScore();
-    }
+    private void OnPiecePositionChanged() => PieceMoved?.Invoke();
 
     private Piece GetPieceAtPoint(Point point)
     {
