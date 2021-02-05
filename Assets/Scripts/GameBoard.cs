@@ -30,10 +30,19 @@ public class GameBoard : Singleton<GameBoard>
 
 
     /// <summary>
-    /// Инициализация игровой области
+    /// Инициализация новой игровой области
     /// </summary>
-    public void Initialize() => InitializePieces();
+    /// <param name="scale">Размерность игровой доски</param>
+    public void Initialize(int scale)
+    {
+        _width = _height = scale;
+        InitializePieces();
+    }
 
+    /// <summary>
+    /// Инициализация массива игровых ячеек на готовой игровой области
+    /// </summary>
+    /// <param name="data">Массив данных ячеек</param>
     public void Initialize(PieceData[,] data)
     {
         ClearBoard();
@@ -63,13 +72,49 @@ public class GameBoard : Singleton<GameBoard>
             if (_pieces[x, y].Type == Piece.PieceType.HOLE)
                 _pieces[x, y].PositionChanged -= OnPiecePositionChanged;
         }
-           
-        
-       
         
         // Размер доски
         SetBoradSize();
     }
+    
+    
+    private void InitializePieces()
+    {
+        random = new System.Random();
+        _pieces = new Piece[_width, _height];
+        
+        // Заполнение
+        int currentPiece = 0;
+        for(int y = 0; y < _pieces.GetLength(0); y++)
+        for (int x = 0; x < _pieces.GetLength(1); x++)
+        {
+            currentPiece++;
+            var piece = Instantiate(_pieceGameObject, _gameBoard);
+            piece.Initialize(currentPiece, new Point(x, y));
+            piece.name = piece.ToString();
+
+            _pieces[x, y] = piece;
+        }
+
+        // Перемешивание
+        do
+        {
+            Shuffle();
+            _pieces[_width - 1, _height - 1].SetAsHole();
+        } while (!CheckResolveCondition());
+        
+        // Подписка на события
+        for(int x = 0; x < _pieces.GetLength(0); x++)
+        for (int y = 0; y < _pieces.GetLength(1); y++)
+            _pieces[x, y].PositionChanged += OnPiecePositionChanged;
+        
+        _pieces[_width - 1, _height - 1].PositionChanged -= OnPiecePositionChanged;
+        
+        // Размер доски
+        SetBoradSize();
+    }
+    
+    
     
     public void MovePiece(Piece piece)
     {
@@ -109,44 +154,14 @@ public class GameBoard : Singleton<GameBoard>
             }
         }
     }
-    
 
-    private void InitializePieces()
+    
+    // Инициализация
+    private void Awake()
     {
-        random = new System.Random();
-        _pieces = new Piece[_width, _height];
-        
-        // Заполнение
-        int currentPiece = 0;
-        for(int y = 0; y < _pieces.GetLength(0); y++)
-        for (int x = 0; x < _pieces.GetLength(1); x++)
-        {
-            currentPiece++;
-            var piece = Instantiate(_pieceGameObject, _gameBoard);
-            piece.Initialize(currentPiece, new Point(x, y));
-            piece.name = piece.ToString();
-
-            _pieces[x, y] = piece;
-        }
-
-        // Перемешивание
-        do
-        {
-            Shuffle();
-            _pieces[_width - 1, _height - 1].SetAsHole();
-        } while (!CheckResolveCondition());
-        
-        // Подписка на события
-        for(int x = 0; x < _pieces.GetLength(0); x++)
-        for (int y = 0; y < _pieces.GetLength(1); y++)
-            _pieces[x, y].PositionChanged += OnPiecePositionChanged;
-        
-        _pieces[_width - 1, _height - 1].PositionChanged -= OnPiecePositionChanged;
-        
-        // Размер доски
-        SetBoradSize();
+        if (_gameBoard == null)
+            _gameBoard = FindObjectOfType<GameBoard>().GetComponent<RectTransform>();
     }
-    
     
     private void OnPiecePositionChanged()
     {

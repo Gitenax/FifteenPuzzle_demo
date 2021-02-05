@@ -7,14 +7,20 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Audio.cs" t="Include" />
           <e p="Data" t="Include">
             <e p="GameData.cs" t="Include" />
             <e p="GameDataProvider.cs" t="Include" />
             <e p="PieceData.cs" t="Include" />
           </e>
+          <e p="Displays" t="Include">
+            <e p="ElapsedTimeDisplay.cs" t="Include" />
+            <e p="MoveCountDisplay.cs" t="Include" />
+          </e>
           <e p="FifteenGame.cs" t="Include" />
           <e p="GameBoard.cs" t="Include" />
           <e p="Piece.cs" t="Include" />
+          <e p="PiecePool.cs" t="Include" />
           <e p="Unit" t="Include">
             <e p="Point.cs" t="Include" />
           </e>

@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 
 public class FifteenGame : Singleton<FifteenGame>
 {
-    [SerializeField] private Text _movesText;
     [SerializeField] private int _moves;
-    
-    [SerializeField] private Text _timeText;
-    private float _seconds;
+    [SerializeField] private float _seconds;
     [SerializeField] private GameBoard _gameBoard;
 
+    public event Action<int> MovesChanged;
+    public event Action<float> TimeChanged;
+    
     public int Moves => _moves;
 
     public float Seconds => _seconds;
@@ -28,7 +28,7 @@ public class FifteenGame : Singleton<FifteenGame>
     public void IncreaseScore()
     {
         _moves++;
-        _movesText.text = $"Ходов сделано: {_moves}";
+        MovesChanged?.Invoke(_moves);
     }
     
     /// <summary>
@@ -68,26 +68,23 @@ public class FifteenGame : Singleton<FifteenGame>
         _gameBoard.Initialize(data.Pieces);
         _seconds = data.ElapsedTime;
         _moves = data.MovesCount;
-        _movesText.text = $"Ходов сделано: {_moves}";
+        
+        MovesChanged?.Invoke(_moves);
+        TimeChanged?.Invoke(_seconds);
     }
     
+
     
-    
-    private void Awake()
+    private void Start()
     {
-        _moves = 0;
-        _gameBoard.Initialize();
+        _gameBoard.Initialize(3);
     }
 
-    private void Update()
-    {
-        DrawTime();
-    }
+    private void Update() => IncreaseTime();
 
-    private void DrawTime()
+    private void IncreaseTime()
     {
         _seconds += Time.deltaTime;
-        TimeSpan elapsedTime = TimeSpan.FromSeconds(_seconds);
-        _timeText.text = "Время: " +  elapsedTime.ToString("mm':'ss");
+        TimeChanged?.Invoke(_seconds);
     }
 }
