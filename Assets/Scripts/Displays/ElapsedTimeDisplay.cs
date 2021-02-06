@@ -5,12 +5,21 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Text))]
 public class ElapsedTimeDisplay : MonoBehaviour
 {
-    private Text _elapsedTimeText;
+    private FifteenGame _game = FifteenGame.Instance;
+    [SerializeField] private Text _elapsedTimeText;
 
-    private void Start()
+    
+    private void OnEnable()
     {
-        _elapsedTimeText = GetComponent<Text>();
-        FifteenGame.Instance.TimeChanged += OnTimeChanged;
+        if(_elapsedTimeText == null)
+            _elapsedTimeText = GetComponent<Text>();
+        
+        _game.TimeChanged += OnTimeChanged;
+    }
+
+    private void OnDisable()
+    {
+        _game.TimeChanged -= OnTimeChanged;
     }
 
     private void OnTimeChanged(float obj)
@@ -19,5 +28,4 @@ public class ElapsedTimeDisplay : MonoBehaviour
         TimeSpan elapsedTime = TimeSpan.FromSeconds(obj);
         _elapsedTimeText.text = "Время: " +  elapsedTime.ToString("mm':'ss");
     }
-    
 }

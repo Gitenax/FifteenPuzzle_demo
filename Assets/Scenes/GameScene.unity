@@ -723,6 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f889b98562a031e4aa5c642e03c84481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _elapsedTimeText: {fileID: 380891895}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93678bcf1742cc84e92f1c0af06f34e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _moveCountText: {fileID: 682177220}
 --- !u!1 &702978325
 GameObject:
   m_ObjectHideFlags: 0

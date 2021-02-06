@@ -1,15 +1,25 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Text))]
 public class MoveCountDisplay : MonoBehaviour
 {
-    private Text _moveCountText;
+    private FifteenGame _game = FifteenGame.Instance;
+    [SerializeField] private Text _moveCountText;
 
-    private void Start()
+    
+    private void OnEnable()
     {
-        _moveCountText = GetComponent<Text>();
-        FifteenGame.Instance.MovesChanged += OnMovesChanged;
+        if(_moveCountText == null)
+            _moveCountText = GetComponent<Text>();
+        
+        _game.MovesChanged += OnMovesChanged;
+    }
+
+    private void OnDisable()
+    {
+        _game.MovesChanged -= OnMovesChanged;
     }
 
     private void OnMovesChanged(int obj)

@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Add main menu">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Updated scripts and menu">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FifteenGame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FifteenGame.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameDataProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameDataProvider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Displays/ElapsedTimeDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Displays/ElapsedTimeDisplay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Piece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Piece.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,17 +18,19 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/PieceMover.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Grid/ArrayLayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Grid/Point.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Pieces/GamePiece.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PiecePool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Match3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PiecePool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Match3.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,10 +47,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Piece.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Displays/ElapsedTimeDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Displays/ElapsedTimeDisplay.cs" />
       </list>
     </option>
   </component>
@@ -103,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611589386866</updated>
       <workItem from="1611589400081" duration="8283000" />
-      <workItem from="1611837485546" duration="62786000" />
+      <workItem from="1611837485546" duration="65552000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1612458202610</created>
@@ -119,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612544129638</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated scripts and menu">
+      <created>1612552814981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612552814981</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +132,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add main menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add main menu" />
+    <MESSAGE value="Updated scripts and menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated scripts and menu" />
   </component>
   <component name="WindowStateProjectService">
     <state width="426" height="464" key="DebuggerActiveHint" timestamp="1612034621634">
@@ -206,14 +208,14 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="793" y="241" key="RiderGenerateDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1611599415254" />
-    <state x="154" y="92" width="1674" height="896" key="VCS.FileHistoryDialog" timestamp="1612545902661">
+    <state x="154" y="92" width="1674" height="896" key="VCS.FileHistoryDialog" timestamp="1612604154221">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="154" y="92" width="1674" height="896" key="VCS.FileHistoryDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1612545902661" />
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1612544133189">
+    <state x="154" y="92" width="1674" height="896" key="VCS.FileHistoryDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1612604154221" />
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1612552824054">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1612544133189" />
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1612552824054" />
     <state x="808" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612539408935">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
