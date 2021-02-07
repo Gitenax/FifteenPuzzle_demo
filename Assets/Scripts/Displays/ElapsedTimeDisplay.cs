@@ -5,12 +5,14 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Text))]
 public class ElapsedTimeDisplay : MonoBehaviour
 {
-    private FifteenGame _game = FifteenGame.Instance;
+    private FifteenGame _game;
     [SerializeField] private Text _elapsedTimeText;
 
     
-    private void OnEnable()
+    private void Start()
     {
+        _game = FifteenGame.Instance;
+        
         if(_elapsedTimeText == null)
             _elapsedTimeText = GetComponent<Text>();
         

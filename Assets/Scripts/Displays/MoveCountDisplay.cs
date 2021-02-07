@@ -5,12 +5,14 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Text))]
 public class MoveCountDisplay : MonoBehaviour
 {
-    private FifteenGame _game = FifteenGame.Instance;
+    private FifteenGame _game;
     [SerializeField] private Text _moveCountText;
 
     
-    private void OnEnable()
+    private void Start()
     {
+        _game = FifteenGame.Instance;
+        
         if(_moveCountText == null)
             _moveCountText = GetComponent<Text>();
         

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameBoard : Singleton<GameBoard>
 {
-    private static System.Random random;
+    private static System.Random random = new System.Random();
     
     [SerializeField] private Piece _pieceGameObject;
     [SerializeField] private RectTransform _gameBoard;
@@ -83,7 +83,6 @@ public class GameBoard : Singleton<GameBoard>
     
     private void InitializePieces()
     {
-        random = new System.Random();
         _pieces = new Piece[_width, _height];
         
         // Заполнение
@@ -191,6 +190,9 @@ public class GameBoard : Singleton<GameBoard>
         pieceTwo.PointPosition = tempPoint;
     }
 
+    /// <summary>
+    /// Перемешивание массива ячеек
+    /// </summary>
     private void Shuffle()
     {
         int lastX = _width - 1;
@@ -241,15 +243,12 @@ public class GameBoard : Singleton<GameBoard>
     
     private void SetBoradSize()
     {
-        if(_pieces[0, 0] == null)
-            return;
+        if(_pieceGameObject == null) return;
         
-        var piece = _pieces[0, 0];
         float offset = 10;
-
         _gameBoard.sizeDelta = new Vector2(
-            _width * piece.Width + offset, 
-            _height * piece.Height + offset);
+            _width * _pieceGameObject.Width + offset, 
+            _height * _pieceGameObject.Height + offset);
     }
     
     private void CheckWinCondition()
@@ -272,6 +271,11 @@ public class GameBoard : Singleton<GameBoard>
             Debug.Log("<color=green>YOU WIN</color>");
     }
 
+    
+    /// <summary>
+    /// Проверка игровой раскладки на разрешимость
+    /// </summary>
+    /// <returns>Возвращает возможность или невозможность разрешения текущей головоломки</returns>
     private bool CheckResolveCondition()
     {
         // Одномерный массив для удобства суммирования
@@ -285,7 +289,10 @@ public class GameBoard : Singleton<GameBoard>
             currentIndex++;
         }
         
-        int valueSum = 0;
+        // Подсчет количества наименьших чисел после текущего
+        // высота как начальное значение оправдано тем, что по формуле нужно прибавить ряд пустой ячейки
+        // т.к. здесь пустая ячейка в правом нижнем углу, то номер ряда совпадает с высотой игровой области
+        int valueSum = _height;
         for (int i = 0; i < tempPieces.Length; i++)
         {
             var currentPiece = tempPieces[i];
@@ -296,7 +303,8 @@ public class GameBoard : Singleton<GameBoard>
                 if (tempPieces[j].Value < currentPiece.Value)
                     valueCount++;
             }
-
+            
+            // Суммирование пар
             valueSum += valueCount;
         }
 
@@ -307,6 +315,7 @@ public class GameBoard : Singleton<GameBoard>
             Debug.Log("<color=red>НЕ РАЗРЕШИМО</color>");
 #endif
         
+        // Т.к. согласно формуле подсчета разрешения головоломки, сумма пар + номер ряда пустой ячейки должна быть четной. 
         return valueSum % 2 == 0;
     }
 }
