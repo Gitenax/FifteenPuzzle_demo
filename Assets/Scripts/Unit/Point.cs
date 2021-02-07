@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor; 
+#endif
+
 
 [System.Serializable]
 public class Point
 {
+    [SerializeField]
     private int _x, _y;
 
     public Point(int newX, int newY)
@@ -101,3 +106,46 @@ public class Point
         return base.GetHashCode();
     }
 }
+
+
+
+#if UNITY_EDITOR
+[CustomPropertyDrawer(typeof(Point))]
+public class PointEditor : PropertyDrawer
+{
+    private const float Spacing = 5f;
+    private const float LabelWidth = 12f;
+    
+    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    {
+        int indent = EditorGUI.indentLevel;
+        EditorGUI.indentLevel = 0;
+
+        position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);
+
+        Rect rextX = new Rect(
+            position.x, 
+            position.y, 
+            position.width / 2 - LabelWidth - (Spacing / 2.0f), 
+            position.height);
+        
+        Rect rextY = new Rect(
+            position.x + rextX.width + Spacing + LabelWidth, 
+            position.y, 
+            position.width / 2 - LabelWidth - (Spacing / 2.0f), 
+            position.height);
+        
+        // Отрисовка Х
+        EditorGUI.LabelField(rextX, "X");
+        rextX.x += LabelWidth;
+        EditorGUI.PropertyField(rextX, property.FindPropertyRelative("_x"), GUIContent.none);
+
+        // Отрисовка Y
+        EditorGUI.LabelField(rextY, "Y");
+        rextY.x += LabelWidth;
+        EditorGUI.PropertyField(rextY, property.FindPropertyRelative("_y"), GUIContent.none);
+        
+        EditorGUI.indentLevel = indent;
+    }
+}
+#endif
