@@ -10,7 +10,7 @@ using Debug = UnityEngine.Debug;
 
 public class Piece : MonoBehaviour, IPointerDownHandler
 {
-    [SerializeField] private Point _pointPosition;
+    [SerializeField] private Point _pointPosition = Point.Zero;
     [SerializeField] private Vector2 _vectorPosition;
     [SerializeField] private Text _textValue;
     [SerializeField] private int _value;
@@ -105,10 +105,7 @@ public class Piece : MonoBehaviour, IPointerDownHandler
         _type = PieceType.HOLE;
     }
 
-    public override string ToString()
-    {
-        return $"Piece #{Value} [{PointPosition.X}, {PointPosition.Y}]";
-    }
+    public override string ToString() => $"Piece #{Value}";
     
     
     
