@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Update timer and moves counter display script">
+    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Добавлен PropertyDrawer">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Piece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Piece.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/Point.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/Point.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameDataProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameDataProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,21 +23,28 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/PieceMover.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/Displays/ElapsedTimeDisplay.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Grid/ArrayLayout.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Grid/Point.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Pieces/GamePiece.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/Unit/Point.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Grid/Point.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/FifteenGame.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/Displays/MoveCountDisplay.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/Displays/ElapsedTimeDisplay.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/Fifteen/Assets/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Pieces/GamePiece.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/Piece.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PiecePool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/GameDataReader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controls/ToggleLabel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Match3.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -42,18 +55,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PieceData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Audio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PiecePool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Displays/ElapsedTimeDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/PointEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Displays/ElapsedTimeDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Piece.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataReader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataWriter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Unit/Point.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ToggleLabel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Audio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/PopupWindow.cs" />
       </list>
     </option>
   </component>
@@ -100,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611589386866</updated>
       <workItem from="1611589400081" duration="8283000" />
-      <workItem from="1611837485546" duration="76224000" />
+      <workItem from="1611837485546" duration="87681000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1612458202610</created>
@@ -130,7 +147,28 @@
       <option name="project" value="LOCAL" />
       <updated>1612639245697</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Исправлены ошибки с NullReference при выполнении событий, небольшие фиксы">
+      <created>1612726699181</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612726699181</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Изменен переопределенный метод ToString, т.к. в именовании при игре PointPosition в имени объекта указывает изначальное значение при старте игры">
+      <created>1612726798549</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612726798549</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Добавлен PropertyDrawer">
+      <created>1612726818660</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612726818660</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +192,10 @@
     <MESSAGE value="Add main menu" />
     <MESSAGE value="Updated scripts and menu" />
     <MESSAGE value="Update timer and moves counter display script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update timer and moves counter display script" />
+    <MESSAGE value="Исправлены ошибки с NullReference при выполнении событий, небольшие фиксы" />
+    <MESSAGE value="Изменен переопределенный метод ToString, т.к. в именовании при игре PointPosition в имени объекта указывает изначальное значение при старте игры" />
+    <MESSAGE value="Добавлен PropertyDrawer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен PropertyDrawer" />
   </component>
   <component name="WindowStateProjectService">
     <state width="426" height="464" key="DebuggerActiveHint" timestamp="1612034621634">
@@ -233,10 +274,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="154" y="92" width="1674" height="896" key="VCS.FileHistoryDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1612604154221" />
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1612639249224">
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1612726842762">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1612639249224" />
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1612726842762" />
     <state x="808" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612539408935">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

@@ -42,18 +42,12 @@ public class FifteenGame : Singleton<FifteenGame>
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-
-    /// <summary>
-    /// Перезагрузка и создание нового уровня
-    /// </summary>
+    
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
-    /// <summary>
-    /// Сохранить текущую игру
-    /// </summary>
     public void SaveGame()
     {
         int arrayWidth = _gameBoard.Pieces.GetLength(0);
@@ -65,23 +59,20 @@ public class FifteenGame : Singleton<FifteenGame>
             piecesData[x, y] = _gameBoard.Pieces[x, y];
         
         
-        GameDataProvider saver = new GameDataProvider("gamedata" + _currentMode);
+        GameDataWriter saver = new GameDataWriter("gamedata" + _currentMode);
         GameData data = new GameData()
         {
             Pieces = piecesData,
             ElapsedTime = Instance.Seconds,
             MovesCount = Instance.Moves
         };
-        saver.Save(data);
+        saver.Write(data);
     }
     
-    /// <summary>
-    /// Загрузка текущей игры или выбранного режима
-    /// </summary>
     public void LoadGame()
     {
-        GameDataProvider reader = new GameDataProvider("gamedata" + _currentMode);
-        GameData data = reader.Load();
+        GameDataReader reader = new GameDataReader("gamedata" + _currentMode);
+        GameData data = reader.Read();
 
         _gameBoard.Initialize(data.Pieces);
         _seconds = data.ElapsedTime;
@@ -94,7 +85,6 @@ public class FifteenGame : Singleton<FifteenGame>
 
     private void Awake()
     {
-        
         DontDestroyOnLoad(gameObject);
         SceneManager.activeSceneChanged += SceneManagerSceneChanged;
     }
