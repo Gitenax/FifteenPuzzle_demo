@@ -6,14 +6,15 @@
     <e p="D:\Unity\Fifteen" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="6000FlatButtonIcon" t="Include">
-          <e p="readme.txt" t="Include" />
-        </e>
         <e p="Scripts" t="Include">
           <e p="Audio.cs" t="Include" />
           <e p="Controls" t="Include">
+            <e p="ContextWindow.cs" t="Include" />
+            <e p="PopupContext.cs" t="Include" />
             <e p="PopupWindow.cs" t="Include" />
+            <e p="SettingsButton.cs" t="Include" />
             <e p="ToggleLabel.cs" t="Include" />
+            <e p="UIController.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
             <e p="Enums.cs" t="Include" />

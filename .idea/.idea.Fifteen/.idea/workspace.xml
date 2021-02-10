@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Работа с сохранениями разделена на два отдельных класса">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Добавлен класс для смены цвета текста на переключателе в зависимости от положения &lt;Toggle&gt;">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,24 +23,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/PieceMover.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Grid/ArrayLayout.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/Unit/Point.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Grid/Point.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/FifteenGame.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/Displays/MoveCountDisplay.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/Displays/ElapsedTimeDisplay.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Grid/Point.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Pieces/GamePiece.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/Piece.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controls/UIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PiecePool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/GameDataReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controls/ToggleLabel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,7 +48,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PiecePool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/PointEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Displays/ElapsedTimeDisplay.cs" />
@@ -66,7 +59,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ToggleLabel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/UIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/PopupContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ContextWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/PopupWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/SettingsButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" />
       </list>
     </option>
   </component>
@@ -94,10 +92,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17528">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17528" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -113,7 +111,8 @@
       <option name="presentableId" value="Default" />
       <updated>1611589386866</updated>
       <workItem from="1611589400081" duration="8283000" />
-      <workItem from="1611837485546" duration="88017000" />
+      <workItem from="1611837485546" duration="96472000" />
+      <workItem from="1612981027661" duration="828000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1612458202610</created>
@@ -178,7 +177,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612897821274</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Работа с сохранениями разделена на два отдельных класса">
+      <created>1612898146358</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612898146358</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Добавлен класс для смены цвета текста на переключателе в зависимости от положения &lt;Toggle&gt;">
+      <created>1612898198078</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612898198078</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +220,8 @@
     <MESSAGE value="Добавлен PropertyDrawer" />
     <MESSAGE value="Доавлен звук и класс для его управления" />
     <MESSAGE value="Работа с сохранениями разделена на два отдельных класса" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа с сохранениями разделена на два отдельных класса" />
+    <MESSAGE value="Добавлен класс для смены цвета текста на переключателе в зависимости от положения &lt;Toggle&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен класс для смены цвета текста на переключателе в зависимости от положения &lt;Toggle&gt;" />
   </component>
   <component name="WindowStateProjectService">
     <state width="426" height="464" key="DebuggerActiveHint" timestamp="1612034621634">
@@ -286,10 +300,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="154" y="92" width="1674" height="896" key="VCS.FileHistoryDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1612604154221" />
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1612897845913">
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1612898201827">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1612897845913" />
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1612898201827" />
     <state x="856" y="274" width="718" height="531" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1612897881376">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

@@ -292,7 +292,7 @@ public class GameBoard : Singleton<GameBoard>
         // Подсчет количества наименьших чисел после текущего
         // высота как начальное значение оправдано тем, что по формуле нужно прибавить ряд пустой ячейки
         // т.к. здесь пустая ячейка в правом нижнем углу, то номер ряда совпадает с высотой игровой области
-        int valueSum = _height;
+        int valueSum = 0;
         for (int i = 0; i < tempPieces.Length; i++)
         {
             var currentPiece = tempPieces[i];
