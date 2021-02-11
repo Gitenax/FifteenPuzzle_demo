@@ -169,13 +169,13 @@ public class GameBoard : Singleton<GameBoard>
 
     private Piece GetPieceAtPoint(Point point)
     {
-        if((point.X >= 0 && point.Y >= 0) 
-           && (point.X < _width && point.Y < _height))
+        if (_pieces.InBound(point))
             return _pieces[point.X, point.Y];
-
+  
         // Если "point" за пределами массива
         return null;
     }
+    
     
     private void FlipPieces(Piece pieceOne, Piece pieceTwo)
     {
