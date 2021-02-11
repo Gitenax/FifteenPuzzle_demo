@@ -32,6 +32,7 @@
           <e p="Piece.cs" t="Include" />
           <e p="PiecePool.cs" t="Include" />
           <e p="Unit" t="Include">
+            <e p="ArrayHelper.cs" t="Include" />
             <e p="Point.cs" t="Include" />
           </e>
           <e p="Utils" t="Include">

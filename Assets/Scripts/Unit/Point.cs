@@ -35,7 +35,9 @@ public class Point
         get => _y; 
         set => _y = value;
     }
+    
 
+    //---[   OPERATORS   ]--------------------------------------------//
     public static Point operator -(Point point)
     {
         return new Point(-point.X, -point.Y);
@@ -76,6 +78,7 @@ public class Point
 
     public static Point Clone(Point point) => 
         new Point(point.X, point.Y);
+
     
     //---[NON-STATIC  METHODS]----------------------------------------//
     public void Multiply(int m)

@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Добавлен класс для смены цвета текста на переключателе в зависимости от положения &lt;Toggle&gt;">
+    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Добавлено всплывающее меню">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/Point.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/Point.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controls/UIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PiecePool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/GameDataReader.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,7 +75,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataReader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataWriter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Unit/Point.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ToggleLabel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio.cs" />
@@ -64,7 +83,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ContextWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/PopupWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/SettingsButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Unit/Point.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Unit/PointHelper.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +133,7 @@
       <updated>1611589386866</updated>
       <workItem from="1611589400081" duration="8283000" />
       <workItem from="1611837485546" duration="96472000" />
-      <workItem from="1612981027661" duration="828000" />
+      <workItem from="1612981027661" duration="3749000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1612458202610</created>
@@ -191,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612898198078</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Добавлено всплывающее меню">
+      <created>1612987572111</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1612987572111</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +237,17 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
@@ -221,7 +260,8 @@
     <MESSAGE value="Доавлен звук и класс для его управления" />
     <MESSAGE value="Работа с сохранениями разделена на два отдельных класса" />
     <MESSAGE value="Добавлен класс для смены цвета текста на переключателе в зависимости от положения &lt;Toggle&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен класс для смены цвета текста на переключателе в зависимости от положения &lt;Toggle&gt;" />
+    <MESSAGE value="Добавлено всплывающее меню" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлено всплывающее меню" />
   </component>
   <component name="WindowStateProjectService">
     <state width="426" height="464" key="DebuggerActiveHint" timestamp="1612034621634">
@@ -300,10 +340,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="154" y="92" width="1674" height="896" key="VCS.FileHistoryDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1612604154221" />
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1612898201827">
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1612987575358">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1612898201827" />
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1612987575358" />
     <state x="856" y="274" width="718" height="531" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1612897881376">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
