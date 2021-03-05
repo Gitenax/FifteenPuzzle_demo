@@ -16,7 +16,7 @@ public class GameBoard : Singleton<GameBoard>
     
     // Логическая массив элементов
     private Piece[,] _pieces;
-
+    
 
     public event Action PieceMoved;
     
@@ -35,7 +35,7 @@ public class GameBoard : Singleton<GameBoard>
     /// <summary>
     /// Инициализация новой игровой области
     /// </summary>
-    /// <param name="scale">Размерность игровой доски</param>
+    /// <param name="mode">Размерность игровой доски</param>
     public void Initialize(GameMode mode)
     {
         _width = _height = (int)mode;
@@ -132,17 +132,16 @@ public class GameBoard : Singleton<GameBoard>
             // Сбор всех ячеек в конкретном направлении
             while (true)
             {
-                var nextPiece = GetPieceAtPoint(piece.PointPosition + directions[i] * checkingPieces.Count);
-                if (nextPiece != null)
+                if(TryGetPieceAtPoint(piece.PointPosition + directions[i] * checkingPieces.Count, out Piece nextPiece))
+                {
                     if (nextPiece.Type != PieceType.HOLE)
-                        checkingPieces.Push(nextPiece);
-                    else
                     {
-                        hole = nextPiece;
-                        break;
+                        checkingPieces.Push(nextPiece);
+                        continue;
                     }
-                else
-                    break;
+                    hole = nextPiece;
+                }
+                break;
             }
             
             //Смещение ячеек
@@ -167,13 +166,20 @@ public class GameBoard : Singleton<GameBoard>
     
     private void OnPiecePositionChanged() => PieceMoved?.Invoke();
 
-    private Piece GetPieceAtPoint(Point point)
+    
+
+    /// <exception cref="NullReferenceException">piece</exception>
+    private bool TryGetPieceAtPoint(Point point, out Piece piece)
     {
-        if (_pieces.InBound(point))
-            return _pieces[point.X, point.Y];
-  
+        if ((point.X >= 0 && point.Y >= 0) && (point.X < _pieces.GetLength(1) && point.Y < _pieces.GetLength(0)))
+        {
+            piece = _pieces[point.X, point.Y];
+            return true;
+        }
+        
         // Если "point" за пределами массива
-        return null;
+        piece = null;
+        return false;
     }
     
     

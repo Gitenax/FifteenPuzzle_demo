@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Audio;
 
-public class Audio : Singleton<Audio>
+public class Audio : MonoBehaviour
 {
     private readonly float MinVolume = -80;
     private readonly float MaxVolume = 0;
@@ -12,6 +9,7 @@ public class Audio : Singleton<Audio>
     
     [Header("Музыка")]
     [SerializeField] private AudioSource _backgroundMusic;
+    [SerializeField] private AudioSource _sfxSoure;
     
     [Header("Микшер"), Space]
     [SerializeField] private AudioMixerGroup _musicGroup;
@@ -20,6 +18,9 @@ public class Audio : Singleton<Audio>
     [Header("Громкость"), Space]
     private bool _musicVolumeEnabled = true;
     private bool _UiVolumeEnabled = true;
+
+
+    public AudioSource SfxSoure => _sfxSoure;
 
     
     public void ToggleMusic()

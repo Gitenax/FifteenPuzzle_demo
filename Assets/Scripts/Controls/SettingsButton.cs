@@ -4,7 +4,7 @@ public class SettingsButton : MonoBehaviour
 {
     public void ShowPopup()
     {
-        PopupWindow window = UIController.Instance.CreatePopup();
+        /*PopupWindow window = UIController.Instance.CreatePopup();
         window.Parent = UIController.Instance.MainCanvas;
         
         PopupContext context = new PopupContext
@@ -19,6 +19,13 @@ public class SettingsButton : MonoBehaviour
                 Debug.Log("<color=green><b>!!!Кнопка нажата!!!</b></color>");
             }
         };
-        window.Show(context);
+        window.Show(context);*/
+
+        PopupWindow settings = UIController.Instance.CreatePopup();
+        settings.Parent = UIController.Instance.MainCanvas;
+        PopupContext context = new PopupContext();
+        
+        
+        settings.Show(context);
     }
 }

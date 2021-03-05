@@ -10,7 +10,7 @@ public class UIController : Singleton<UIController>
     
     public PopupWindow CreatePopup()
     {
-        var popup = Instantiate(Resources.Load("UI/PopupWindow") as GameObject);
+        var popup = Instantiate(Resources.Load("UI/PopupSettings") as GameObject);
         return popup.GetComponent<PopupWindow>();
     }
     

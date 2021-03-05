@@ -1,4 +1,5 @@
 ﻿using System;
+using Controls;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -32,7 +33,6 @@ public class FifteenGame : Singleton<FifteenGame>
     public void SetGameMode(int mode)
     {
         _currentMode = (GameMode) mode;
-        Debug.Log($"Mode = {mode} | CurrentMode = {_currentMode}");
     }
 
     /// <summary>

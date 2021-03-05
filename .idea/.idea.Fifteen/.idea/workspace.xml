@@ -19,12 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Добавлено всплывающее меню">
+    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Добавлен обобщенный расширенный метод для двумерных массивов для работы с Point.cs">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ServiceInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ServiceInstaller.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controls/ContextWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controls/ContextWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controls/SettingsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controls/SettingsButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controls/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controls/UIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/Point.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/Point.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +51,20 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/PieceMover.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/AudioInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Grid/ArrayLayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Grid/Point.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Match3 Game/Assets/Scripts/Pieces/GamePiece.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AD/AdvertService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Unity/Fifteen/Assets/Scripts/GameBoard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controls/ButtonAudio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controls/UIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/AdvertInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PiecePool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/GameDataReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controls/ToggleLabel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,21 +89,31 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataReader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataWriter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ToggleLabel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Audio.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/UIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/PopupContext.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ContextWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/PopupWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/SettingsButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Unit/Point.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Unit/PointHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/SettingsButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/UIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/Button.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ContextWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/ServiceInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ButtonAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Audio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/AudioInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/AdvertInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Unity/BannerClient.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AD/AdvertService.cs" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.google.external-dependency-manager@1.2.164/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.164_manifest.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1nZEnUZLPUbukBebhIJKIjJds4Z" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -101,6 +124,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -133,7 +157,11 @@
       <updated>1611589386866</updated>
       <workItem from="1611589400081" duration="8283000" />
       <workItem from="1611837485546" duration="96472000" />
-      <workItem from="1612981027661" duration="3749000" />
+      <workItem from="1612981027661" duration="7757000" />
+      <workItem from="1614085806581" duration="4478000" />
+      <workItem from="1614185281132" duration="622000" />
+      <workItem from="1614190105707" duration="11031000" />
+      <workItem from="1614866890657" duration="3671000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1612458202610</created>
@@ -219,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612987572111</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Мелкие правки не влияющие ни на что">
+      <created>1613066038554</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1613066038554</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Добавлен обобщенный расширенный метод для двумерных массивов для работы с Point.cs">
+      <created>1613066098823</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1613066098823</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +289,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -261,7 +304,9 @@
     <MESSAGE value="Работа с сохранениями разделена на два отдельных класса" />
     <MESSAGE value="Добавлен класс для смены цвета текста на переключателе в зависимости от положения &lt;Toggle&gt;" />
     <MESSAGE value="Добавлено всплывающее меню" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлено всплывающее меню" />
+    <MESSAGE value="Мелкие правки не влияющие ни на что" />
+    <MESSAGE value="Добавлен обобщенный расширенный метод для двумерных массивов для работы с Point.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен обобщенный расширенный метод для двумерных массивов для работы с Point.cs" />
   </component>
   <component name="WindowStateProjectService">
     <state width="426" height="464" key="DebuggerActiveHint" timestamp="1612034621634">
@@ -336,14 +381,22 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="793" y="241" key="RiderGenerateDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1611599415254" />
+    <state x="837" y="178" key="SettingsEditor" timestamp="1614432036856">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="837" y="178" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1614432036856" />
     <state x="154" y="92" width="1674" height="896" key="VCS.FileHistoryDialog" timestamp="1612604154221">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="154" y="92" width="1674" height="896" key="VCS.FileHistoryDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1612604154221" />
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1612987575358">
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1613066102273">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1612987575358" />
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1613066102273" />
+    <state x="154" y="92" width="1674" height="896" maximized="true" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1614087619479">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="154" y="92" width="1674" height="896" maximized="true" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1614087619479" />
     <state x="856" y="274" width="718" height="531" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1612897881376">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
