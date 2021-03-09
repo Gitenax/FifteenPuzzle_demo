@@ -19,22 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Добавлен обобщенный расширенный метод для двумерных массивов для работы с Point.cs">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ServiceInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ServiceInstaller.cs.meta" afterDir="false" />
+    <list default="true" id="b6240915-6e4e-41b2-b073-2780f7d39010" name="Default Changelist" comment="Minor update">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fifteen/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Piece.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Piece.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controls/ContextWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controls/ContextWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controls/SettingsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controls/SettingsButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controls/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controls/UIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/ServiceInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ServiceInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +55,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controls/ButtonAudio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controls/Buttons/ToggleEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controls/UIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/AdvertInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PiecePool.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,11 +73,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PieceData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PiecePool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/PointEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Displays/MoveCountDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Displays/ElapsedTimeDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Piece.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataReader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameDataWriter.cs" />
@@ -98,15 +89,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameBoard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/Button.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ContextWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/ServiceInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ButtonAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/AudioInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/AdvertInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Unity/BannerClient.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AD/AdvertService.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.google.external-dependency-manager@1.2.164/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.164_manifest.txt" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Piece.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FifteenGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/ButtonEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/ServiceInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AD/AdvertService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/Buttons/ButtonAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/Buttons/ButtonEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/Buttons/ButtonPlay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controls/Buttons/ToggleEvent.cs" />
       </list>
     </option>
   </component>
@@ -119,12 +117,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3497758" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.2998879" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.CSharpInteractiveConfiguration" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -161,7 +160,9 @@
       <workItem from="1614085806581" duration="4478000" />
       <workItem from="1614185281132" duration="622000" />
       <workItem from="1614190105707" duration="11031000" />
-      <workItem from="1614866890657" duration="3671000" />
+      <workItem from="1614866890657" duration="6872000" />
+      <workItem from="1615281051746" duration="432000" />
+      <workItem from="1615315857242" duration="2989000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1612458202610</created>
@@ -261,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613066098823</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Minor update">
+      <created>1614977734393</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614977734393</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +314,8 @@
     <MESSAGE value="Добавлено всплывающее меню" />
     <MESSAGE value="Мелкие правки не влияющие ни на что" />
     <MESSAGE value="Добавлен обобщенный расширенный метод для двумерных массивов для работы с Point.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен обобщенный расширенный метод для двумерных массивов для работы с Point.cs" />
+    <MESSAGE value="Minor update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor update" />
   </component>
   <component name="WindowStateProjectService">
     <state width="426" height="464" key="DebuggerActiveHint" timestamp="1612034621634">
@@ -381,26 +390,26 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="793" y="241" key="RiderGenerateDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1611599415254" />
-    <state x="837" y="178" key="SettingsEditor" timestamp="1614432036856">
+    <state x="494" y="194" key="SettingsEditor" timestamp="1615280488384">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="837" y="178" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1614432036856" />
+    <state x="494" y="194" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1615280488384" />
     <state x="154" y="92" width="1674" height="896" key="VCS.FileHistoryDialog" timestamp="1612604154221">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="154" y="92" width="1674" height="896" key="VCS.FileHistoryDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1612604154221" />
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1613066102273">
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1614977740599">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1613066102273" />
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1614977740598" />
     <state x="154" y="92" width="1674" height="896" maximized="true" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1614087619479">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="154" y="92" width="1674" height="896" maximized="true" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1614087619479" />
-    <state x="856" y="274" width="718" height="531" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1612897881376">
+    <state x="856" y="274" width="718" height="531" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1614977671690">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="856" y="274" width="718" height="531" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1612897881376" />
+    <state x="856" y="274" width="718" height="531" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1614977671690" />
     <state x="808" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612539408935">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

@@ -91,15 +91,12 @@ public class FifteenGame : Singleton<FifteenGame>
 
     private void SceneManagerSceneChanged(Scene arg0, Scene arg1)
     {
-        _moves = 0;
-        _seconds = 0;
+        ClearStats();
 
         // 1 - Игровая сцена
         if (arg1.buildIndex == 1)
         {
-            _gameBoard = FindObjectOfType<GameBoard>();
-            _gameBoard.PieceMoved += IncreaseScore;
-            _gameBoard.Initialize(_currentMode);
+            AssignAndInitGameBoard();
 
             // События на кнопки
             var restartButton = GameObject.Find("UI_RestartButton").GetComponent<Button>();
@@ -110,6 +107,19 @@ public class FifteenGame : Singleton<FifteenGame>
             saveButton.onClick.AddListener(SaveGame);
             loadButton.onClick.AddListener(LoadGame);
         }
+    }
+
+    private void AssignAndInitGameBoard()
+    {
+        _gameBoard = FindObjectOfType<GameBoard>();
+        _gameBoard.PieceMoved += IncreaseScore;
+        _gameBoard.Initialize(_currentMode);
+    }
+
+    private void ClearStats()
+    {
+        _moves = 0;
+        _seconds = 0;
     }
 
     private void Update() => IncreaseTime();

@@ -1030,7 +1030,12 @@
           </e>
           <e p="Audio.cs" t="Include" />
           <e p="Controls" t="Include">
-            <e p="ButtonAudio.cs" t="Include" />
+            <e p="Buttons" t="Include">
+              <e p="ButtonAudio.cs" t="Include" />
+              <e p="ButtonEvent.cs" t="Include" />
+              <e p="ButtonPlay.cs" t="Include" />
+              <e p="ToggleEvent.cs" t="Include" />
+            </e>
             <e p="ContextWindow.cs" t="Include" />
             <e p="PopupContext.cs" t="Include" />
             <e p="PopupWindow.cs" t="Include" />
